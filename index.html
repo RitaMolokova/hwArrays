@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrque = [
+            "1) Есть фобии?",
+            "2) Дельфины спят с одним открытым глазом?",
+            "3) У нас в группе есть Толик?",
+            "4) У жирафа в шее 21 позвонок?",
+            "5) Есть мечта?"
+        ];
+        let a = [1, 1, 1, 1, 1];
+        let da = 0, net = 0; 
+        for (let i = 0; i < arrque.length; i++) {
+            let arrans = prompt(arrque[i]);
+            if (arrans === "да") {
+                da += a[i];
+            }
+            else if (arrans === "нет") {
+                net += a[i];
+            }
+        }
+        alert(`Ваших ответов (да) - ${da}. Ваших ответов (нет) - ${net}.`);
+    </script>
+</body>
+</html>
